@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator | Project 9</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="card">
+            <h1>Online Random Password Generator</h1>
+            <div>
+                <div class="passArea">
+                    <h3 id="pass"></h3>
+                    <button id="copyBtn" aria-label="Copy to clipboard">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                            <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                        </svg>
+                    </button>
+                </div>
+
+            </div>
+            <form action="" class="form">
+                <div class="rangeSelector">
+                    <input type="range" id="range" min="6" max="20" value="8">
+                    <h3>Password Length: <span id="rangeVal"></span> Characters</h3>
+                </div>
+                <div class="options">
+                    <div>
+                        <input type="checkbox" name="UpperCase" id="UpperCase">
+                        <label for="UpperCase">UpperCase</label>
+                        <br>
+                        <input type="checkbox" name="LowerCase" id="LowerCase">
+                        <label for="LowerCase">LowerCase</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="Number" id="Number">
+                        <label for="Number">Number</label>
+                        <br>
+                        <input type="checkbox" name="Symbol" id="Symbol">
+                        <label for="Symbol">Symbol</label>
+                    </div>
+                </div>
+                <div class="Genbtn">
+                    <button id="GenPass">Generate New Password</button>
+                </div>
+            </form>
+        </div>
+
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
